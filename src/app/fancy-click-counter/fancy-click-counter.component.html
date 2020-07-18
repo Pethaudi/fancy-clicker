@@ -1,0 +1,9 @@
+<div id="body" #body (click)="add()">
+	<div id="start" class="point" #start></div>
+	<div id="bar" *ngIf="isInitialized"
+		[ngStyle]="{'width.px': barWidth, 'left.px': barPos}"
+		(click)="emit($event)">
+		<div class="text">{{text}} {{clicks}}</div>
+	</div>
+	<div id="end" class="point" #end></div>
+</div>

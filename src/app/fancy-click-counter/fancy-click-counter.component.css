@@ -1,0 +1,33 @@
+#body {
+	position: relative;
+	max-height: 2em;
+	height: 10vh;
+	width: 100%;
+	background: blue;
+}
+
+#start, #bar, #end {
+	position: absolute;
+	height: 1em;
+	background: yellow;
+	border: solid 1px grey;
+}
+
+#start, #end {
+	width: 1em;
+}
+
+#start {
+	left: 2em;
+}
+
+#end {
+	right: 2em;
+}
+
+.text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
